@@ -1,0 +1,38 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[station]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column gsn_flag in table [dbo].[station] is currently  NVARCHAR (3) NULL but is being changed to  VARCHAR
+         (3) NULL. Data loss could occur.
+       The type for column hcn_crn_flag in table [dbo].[station] is currently  NVARCHAR (3) NULL but is being changed to 
+         VARCHAR (3) NULL. Data loss could occur.
+       The type for column id in table [dbo].[station] is currently  NVARCHAR (11) NOT NULL but is being changed to  VARCHAR
+         (11) NOT NULL. Data loss could occur.
+       The type for column name in table [dbo].[station] is currently  NVARCHAR (30) NULL but is being changed to  VARCHAR (30)
+         NULL. Data loss could occur.
+       The type for column state in table [dbo].[station] is currently  NVARCHAR (2) NULL but is being changed to  VARCHAR (2)
+         NULL. Data loss could occur.
+       The type for column wmo_id in table [dbo].[station] is currently  NVARCHAR (5) NULL but is being changed to  VARCHAR (5)
+         NULL. Data loss could occur.
+
+** User actions
+     Table rebuild
+       [dbo].[station] (Table)
+
+** Supporting actions
+     Create
+       [dbo].[station].[IX_geo] (Spatial Index)
+
+The object [tpa] exists in the target, but it will not be dropped even though you selected the 'Generate drop statements for objects that are in the target database but that are not in the source' check box.
+The object [tpa_log] exists in the target, but it will not be dropped even though you selected the 'Generate drop statements for objects that are in the target database but that are not in the source' check box.
+The type for column gsn_flag in table [dbo].[station] is currently  NVARCHAR (3) NULL but is being changed to  VARCHAR (3) NULL. Data loss could occur.
+The type for column hcn_crn_flag in table [dbo].[station] is currently  NVARCHAR (3) NULL but is being changed to  VARCHAR (3) NULL. Data loss could occur.
+The type for column id in table [dbo].[station] is currently  NVARCHAR (11) NOT NULL but is being changed to  VARCHAR (11) NOT NULL. Data loss could occur.
+The type for column name in table [dbo].[station] is currently  NVARCHAR (30) NULL but is being changed to  VARCHAR (30) NULL. Data loss could occur.
+The type for column state in table [dbo].[station] is currently  NVARCHAR (2) NULL but is being changed to  VARCHAR (2) NULL. Data loss could occur.
+The type for column wmo_id in table [dbo].[station] is currently  NVARCHAR (5) NULL but is being changed to  VARCHAR (5) NULL. Data loss could occur.
+

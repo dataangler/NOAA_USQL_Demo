@@ -1,0 +1,14 @@
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\bin\Debug\Accord.dll.config
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\bin\Debug\noaa_lib.dll
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\bin\Debug\noaa_lib.pdb
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\bin\Debug\Accord.dll
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\bin\Debug\Accord.Math.dll
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\bin\Debug\Accord.Statistics.dll
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\bin\Debug\Microsoft.Analytics.Interfaces.dll
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\bin\Debug\Microsoft.Analytics.Types.dll
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\bin\Debug\Accord.xml
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\bin\Debug\Accord.Math.xml
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\bin\Debug\Accord.Statistics.xml
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\obj\Debug\noaa_lib.csprojResolveAssemblyReference.cache
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\obj\Debug\noaa_lib.dll
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_lib\obj\Debug\noaa_lib.pdb

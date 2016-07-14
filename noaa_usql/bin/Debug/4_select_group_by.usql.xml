@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CompileResult scriptPath="C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\4_select_group_by.usql"><Error><Start>753</Start><End>757</End><Message>E_CSC_USER_DDLENTITYDOESNOTEXIST: Database 'noaa' does not exist.
+Description:
+No entity of the required type has the specified name.
+Resolution:
+Either check that the name is correct or create an entity with the specified name.... at token [noaa], line 28
+near the ###:
+**************
+USE IT.
+2b. If not, then demo write output to blob storage &amp; SQLDW with polybase over blob storage
+3. Finally, Power BI to view the results.
+
+
+*/
+
+
+USE  ### noaa;
+
+
+DROP TABLE IF EXISTS dbo.result;
+
+/*
+CREATE TABLE dbo.result (
+    [year] int,
+    [month] int,
+    [location] string,  
+    [value_desc] stri</Message></Error><Error><Start>1493</Start><End>1496</End><Message>E_CSC_USER_DDLENTITYOFNEITHERTYPEEXISTS: Table or view 'master.dbo.observation' does not exist.
+Description:
+No entity of the required types has the specified name.
+Resolution:
+Either check that the name is correct or create an entity with the specified name.... at token [dbo], line 68
+near the ###:
+**************
+  ,c.[month]
+    ,s.[iata_code] AS [location]   
+    ,String.Concat("AVG_", o.[element]) AS [value_desc]      
+    ,AVG(o.[value]) AS [value]
+       
+FROM  ### dbo.observation AS o
+JOIN dbo.calendar AS c ON c.datekey == o.datekey
+JOIN dbo.station_iata AS s ON s.id == o.station
+    
+WHERE o.[element] IN ("TMAX","TMI</Message></Error><Error><Start>1520</Start><End>1523</End><Message>E_CSC_USER_DDLENTITYOFNEITHERTYPEEXISTS: Table or view 'master.dbo.calendar' does not exist.
+Description:
+No entity of the required types has the specified name.
+Resolution:
+Either check that the name is correct or create an entity with the specified name.... at token [dbo], line 69
+near the ###:
+**************
+code] AS [location]   
+    ,String.Concat("AVG_", o.[element]) AS [value_desc]      
+    ,AVG(o.[value]) AS [value]
+       
+FROM dbo.observation AS o
+JOIN  ### dbo.calendar AS c ON c.datekey == o.datekey
+JOIN dbo.station_iata AS s ON s.id == o.station
+    
+WHERE o.[element] IN ("TMAX","TMIN")
+AND s.[iata_code] == "</Message></Error><Error><Start>1570</Start><End>1573</End><Message>E_CSC_USER_DDLENTITYOFNEITHERTYPEEXISTS: Table or view 'master.dbo.station_iata' does not exist.
+Description:
+No entity of the required types has the specified name.
+Resolution:
+Either check that the name is correct or create an entity with the specified name.... at token [dbo], line 70
+near the ###:
+**************
+ o.[element]) AS [value_desc]      
+    ,AVG(o.[value]) AS [value]
+       
+FROM dbo.observation AS o
+JOIN dbo.calendar AS c ON c.datekey == o.datekey
+JOIN  ### dbo.station_iata AS s ON s.id == o.station
+    
+WHERE o.[element] IN ("TMAX","TMIN")
+AND s.[iata_code] == "ORL"
+    
+GROUP BY 
+     c.[year]
+    ,c.[mont</Message></Error></CompileResult>

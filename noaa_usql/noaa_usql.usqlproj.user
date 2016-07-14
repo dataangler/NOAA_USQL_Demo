@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <StartFile>A_output.usql</StartFile>
+    <ActiveFile>1_basic_select.usql</ActiveFile>
+    <BuildClusterPlanProperty>False</BuildClusterPlanProperty>
+  </PropertyGroup>
+  <ItemGroup>
+    <ScriptUserData Include="1_basic_select.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>LocalCA:localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>DataLakeCA:adla316</ClusterComputeAccount>
+      <ClusterDatabase>master</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+      <Parallelism>5</Parallelism>
+    </ScriptUserData>
+    <ScriptUserData Include="2_adla_catalog.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>LocalCA:localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>DataLakeCA:adla316</ClusterComputeAccount>
+      <ClusterDatabase>noaa</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+      <Parallelism>5</Parallelism>
+    </ScriptUserData>
+    <ScriptUserData Include="3_external_data.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>LocalCA:localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>DataLakeCA:adla316</ClusterComputeAccount>
+      <ClusterDatabase>noaa</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+      <Parallelism>5</Parallelism>
+    </ScriptUserData>
+    <ScriptUserData Include="4_select_group_by.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>LocalCA:localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>DataLakeCA:adla316</ClusterComputeAccount>
+      <ClusterDatabase>noaa</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+      <Parallelism>5</Parallelism>
+    </ScriptUserData>
+    <ScriptUserData Include="5_federated.usql">
+      <Parallelism>5</Parallelism>
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>LocalCA:localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>DataLakeCA:adla316</ClusterComputeAccount>
+      <ClusterDatabase>noaa</ClusterDatabase>
+      <ClusterSchema>usql</ClusterSchema>
+    </ScriptUserData>
+    <ScriptUserData Include="6_assemblies_prediction.usql">
+      <Parallelism>3</Parallelism>
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>LocalCA:localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>DataLakeCA:adla316</ClusterComputeAccount>
+      <ClusterDatabase>noaa</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+    </ScriptUserData>
+    <ScriptUserData Include="7_misc.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>LocalCA:localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>DataLakeCA:adla316</ClusterComputeAccount>
+      <ClusterDatabase>noaa</ClusterDatabase>
+      <ClusterSchema>usql</ClusterSchema>
+      <Parallelism>2</Parallelism>
+    </ScriptUserData>
+    <ScriptUserData Include="8_misc2.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>LocalCA:localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>DataLakeCA:adla316</ClusterComputeAccount>
+      <ClusterDatabase>noaa</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+      <Parallelism>5</Parallelism>
+    </ScriptUserData>
+    <ScriptUserData Include="9_misc3.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>LocalCA:localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>DataLakeCA:adla316</ClusterComputeAccount>
+      <ClusterDatabase>master</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+      <Parallelism>5</Parallelism>
+    </ScriptUserData>
+    <ScriptUserData Include="A_output.usql">
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
+      <LocalComputeAccount>LocalCA:localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+    </ScriptUserData>
+  </ItemGroup>
+</Project>

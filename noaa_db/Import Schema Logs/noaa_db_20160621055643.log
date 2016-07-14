@@ -1,0 +1,83 @@
+6/21/2016 1:56:43 PM	This log contains information about the import schema operation into project 'noaa_db' on computer 'CSGTAMLT38' by user 'jbrugger'.
+6/21/2016 1:56:43 PM	Import of database schema has started.
+6/21/2016 1:56:48 PM	Gathering database options
+6/21/2016 1:56:48 PM	Gathering users
+6/21/2016 1:56:48 PM	Gathering roles
+6/21/2016 1:56:48 PM	Gathering application roles
+6/21/2016 1:56:48 PM	Gathering role memberships
+6/21/2016 1:56:48 PM	Gathering filegroups
+6/21/2016 1:56:48 PM	Gathering full-text catalogs
+6/21/2016 1:56:48 PM	Gathering assemblies
+6/21/2016 1:56:48 PM	Gathering certificates
+6/21/2016 1:56:48 PM	Gathering asymmetric keys
+6/21/2016 1:56:48 PM	Gathering symmetric keys
+6/21/2016 1:56:48 PM	Gathering encrypted symmetric keys
+6/21/2016 1:56:48 PM	Gathering schemas
+6/21/2016 1:56:48 PM	Gathering XML schema collections
+6/21/2016 1:56:48 PM	Gathering user-defined data types
+6/21/2016 1:56:48 PM	Gathering user-defined types
+6/21/2016 1:56:48 PM	Gathering table types
+6/21/2016 1:56:48 PM	Gathering unique keys for table types
+6/21/2016 1:56:48 PM	Gathering primary keys for table types
+6/21/2016 1:56:48 PM	Gathering indexes for table types
+6/21/2016 1:56:48 PM	Gathering check constraints for table types
+6/21/2016 1:56:48 PM	Gathering default constraints for table types
+6/21/2016 1:56:48 PM	Gathering partition functions
+6/21/2016 1:56:48 PM	Gathering partition schemes
+6/21/2016 1:56:48 PM	Gathering functions
+6/21/2016 1:56:48 PM	Gathering encrypted functions
+6/21/2016 1:56:48 PM	Gathering aggregates
+6/21/2016 1:56:48 PM	Gathering procedures
+6/21/2016 1:56:48 PM	Gathering encrypted procedures
+6/21/2016 1:56:48 PM	Gathering tables
+6/21/2016 1:56:48 PM	Gathering primary keys
+6/21/2016 1:56:48 PM	Gathering unique constraints
+6/21/2016 1:56:48 PM	Gathering foreign keys
+6/21/2016 1:56:48 PM	Gathering default constraints
+6/21/2016 1:56:48 PM	Gathering check constraints
+6/21/2016 1:56:48 PM	Gathering views
+6/21/2016 1:56:48 PM	Gathering encrypted views
+6/21/2016 1:56:48 PM	Gathering indexes
+6/21/2016 1:56:48 PM	Gathering statistics
+6/21/2016 1:56:48 PM	Gathering full-text index stoplists
+6/21/2016 1:56:48 PM	Gathering search property lists
+6/21/2016 1:56:48 PM	Gathering search properties
+6/21/2016 1:56:48 PM	Gathering full-text indexes
+6/21/2016 1:56:48 PM	Gathering column store indexes
+6/21/2016 1:56:48 PM	Gathering spatial indexes
+6/21/2016 1:56:48 PM	Gathering XML indexes
+6/21/2016 1:56:48 PM	Gathering Selective XML indexes
+6/21/2016 1:56:48 PM	Gathering encrypted triggers
+6/21/2016 1:56:48 PM	Gathering triggers
+6/21/2016 1:56:48 PM	Gathering encrypted and clr ddl triggers
+6/21/2016 1:56:48 PM	Gathering ddl triggers
+6/21/2016 1:56:48 PM	Gathering synonyms
+6/21/2016 1:56:48 PM	Gathering defaults
+6/21/2016 1:56:48 PM	Gathering data constraint uddt bindings
+6/21/2016 1:56:48 PM	Gathering rules
+6/21/2016 1:56:48 PM	Gathering data constraint uddt bindings
+6/21/2016 1:56:48 PM	Gathering message types
+6/21/2016 1:56:48 PM	Gathering queues
+6/21/2016 1:56:48 PM	Gathering contracts
+6/21/2016 1:56:48 PM	Gathering services
+6/21/2016 1:56:48 PM	Gathering event notifications
+6/21/2016 1:56:48 PM	Gathering remote service bindings
+6/21/2016 1:56:48 PM	Gathering broker priorities
+6/21/2016 1:56:48 PM	Gathering signatures
+6/21/2016 1:56:48 PM	Gathering data compression options
+6/21/2016 1:56:48 PM	Gathering sequence types
+6/21/2016 1:56:48 PM	Gathering security policies
+6/21/2016 1:56:48 PM	Gather column encryption keys
+6/21/2016 1:56:48 PM	Gathering column master keys
+6/21/2016 1:56:48 PM	Gathering external data sources
+6/21/2016 1:56:48 PM	Gathering external file formats
+6/21/2016 1:56:48 PM	Gathering external tables
+6/21/2016 1:56:48 PM	Gathering extended properties
+6/21/2016 1:56:48 PM	Gathering credentials
+6/21/2016 1:56:48 PM	Gathering logins
+6/21/2016 1:56:48 PM	Gathering server audits
+6/21/2016 1:56:49 PM	Scanning project for duplicate elements
+6/21/2016 1:56:49 PM	Finished duplicate element processing
+6/21/2016 1:56:49 PM	Finished importing database.
+6/21/2016 1:56:49 PM	A summary of the import was saved to the following location: C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_db\Import Schema Logs\noaa_db_20160621055643.log
+6/21/2016 1:56:49 PM	Click Finish to continue...

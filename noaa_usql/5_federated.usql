@@ -1,0 +1,53 @@
+﻿/*
+1. Demo federated query
+2. Demo TVF
+3. Demo String.Concat C# .Net method inline
+4. CROSS APPLY EXPLODE
+*/
+
+
+USE noaa;
+
+
+@station_tpa =
+    SELECT *
+    FROM EXTERNAL azsqldbsrc EXECUTE @"
+        SELECT id, name
+        FROM dbo.station
+        WHERE geo.STDistance(geography::Point(27.968056, -82.476389, 4326)) < 1609 * 10
+        /*i.e. about 10-mile radius of Tampa, FL */
+        ";
+
+
+DROP TABLE IF EXISTS dbo.result;
+
+
+CREATE TABLE dbo.result (
+    INDEX ix_average_temp CLUSTERED ([year] ASC, [month] ASC)
+    PARTITIONED BY ROUND ROBIN
+)
+AS      
+                      
+SELECT 
+     c.[year]
+    ,c.[month]
+    ,@"Tampa" AS [location]   
+    ,String.Concat("AVG_", o.[element], "_", t.[scale]) AS [value_desc]      
+    ,AVG(t.[temp]) AS [value]
+       
+FROM dbo.observation AS o
+JOIN dbo.calendar AS c ON c.datekey == o.datekey 
+JOIN @station_tpa AS s ON s.id == o.station
+CROSS APPLY EXPLODE(new SQL.MAP<string, decimal?>{
+     {"C", o.value / 10m}
+    ,{"F", (o.value / 10m) * (9m / 5m) + 32m}
+    ,{"K", o.value / 10m + 273.15m}
+    }) AS t(scale, temp)
+    
+WHERE o.[element] IN ("TMAX","TMIN")
+    
+GROUP BY 
+     c.[year]
+    ,c.[month]   
+    ,o.[element]
+    ,t.[scale]; 

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseName>noaadb</TargetDatabaseName>
+    <DeployScriptFileName>noaa_db.sql</DeployScriptFileName>
+    <TargetConnectionString>Data Source=sql316.database.windows.net;Persist Security Info=False;User ID=logan;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
+    <ProfileVersionNumber>1</ProfileVersionNumber>
+    <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
+    <DropObjectsNotInSource>True</DropObjectsNotInSource>
+    <DoNotDropCredentials>True</DoNotDropCredentials>
+    <DoNotDropLogins>True</DoNotDropLogins>
+    <DoNotDropUsers>True</DoNotDropUsers>
+    <DoNotDropPermissions>True</DoNotDropPermissions>
+    <DoNotDropRoleMembership>True</DoNotDropRoleMembership>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,153 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "noaa_etl", "noaa_etl\noaa_etl.dtproj", "{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "noaa_db", "noaa_db\noaa_db.sqlproj", "{F6C7836E-0704-4128-A221-E2199737B694}"
+EndProject
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "noaa_ps", "noaa_ps\noaa_ps.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "noaa_lib", "noaa_lib\noaa_lib.csproj", "{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}"
+EndProject
+Project("{182E2583-ECAD-465B-BB50-91101D7C24CE}") = "noaa_usql", "noaa_usql\noaa_usql.usqlproj", "{C10E29B9-CC86-4232-891A-BB6D32AA8B43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Development|Any CPU = Development|Any CPU
+		Development|x64 = Development|x64
+		Development|x86 = Development|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Debug|Any CPU.ActiveCfg = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Debug|Any CPU.Build.0 = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Debug|x64.ActiveCfg = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Debug|x64.Build.0 = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Debug|x86.ActiveCfg = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Debug|x86.Build.0 = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Development|Any CPU.ActiveCfg = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Development|Any CPU.Build.0 = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Development|x64.ActiveCfg = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Development|x64.Build.0 = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Development|x86.ActiveCfg = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Development|x86.Build.0 = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Release|Any CPU.ActiveCfg = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Release|Any CPU.Build.0 = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Release|x64.ActiveCfg = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Release|x64.Build.0 = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Release|x86.ActiveCfg = Development
+		{5DB4C2E6-763F-41CA-A67A-F4D635B8BDDD}.Release|x86.Build.0 = Development
+		{F6C7836E-0704-4128-A221-E2199737B694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Debug|x64.Build.0 = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Debug|x86.Build.0 = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Development|x64.ActiveCfg = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Development|x64.Build.0 = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Development|x64.Deploy.0 = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Development|x86.ActiveCfg = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Development|x86.Build.0 = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Development|x86.Deploy.0 = Debug|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Release|x64.ActiveCfg = Release|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Release|x64.Build.0 = Release|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Release|x64.Deploy.0 = Release|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Release|x86.ActiveCfg = Release|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Release|x86.Build.0 = Release|Any CPU
+		{F6C7836E-0704-4128-A221-E2199737B694}.Release|x86.Deploy.0 = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|x64.Build.0 = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|x86.Build.0 = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Development|x64.ActiveCfg = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Development|x64.Build.0 = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Development|x86.ActiveCfg = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Development|x86.Build.0 = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|x64.ActiveCfg = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|x64.Build.0 = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|x86.ActiveCfg = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|x86.Build.0 = Release|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Debug|x64.Build.0 = Debug|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Debug|x86.Build.0 = Debug|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Development|x64.ActiveCfg = Debug|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Development|x64.Build.0 = Debug|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Development|x86.ActiveCfg = Debug|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Development|x86.Build.0 = Debug|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Release|x64.ActiveCfg = Release|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Release|x64.Build.0 = Release|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Release|x86.ActiveCfg = Release|Any CPU
+		{1B3E7106-6D16-4B96-87C5-F15E18FFC08F}.Release|x86.Build.0 = Release|Any CPU
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Debug|x64.ActiveCfg = Debug|x64
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Debug|x64.Build.0 = Debug|x64
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Debug|x86.ActiveCfg = Debug|x86
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Debug|x86.Build.0 = Debug|x86
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Development|x64.ActiveCfg = Debug|x64
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Development|x64.Build.0 = Debug|x64
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Development|x86.ActiveCfg = Debug|x86
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Development|x86.Build.0 = Debug|x86
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Release|x64.ActiveCfg = Release|x64
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Release|x64.Build.0 = Release|x64
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Release|x86.ActiveCfg = Release|x86
+		{C10E29B9-CC86-4232-891A-BB6D32AA8B43}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://alban1973.visualstudio.com/
+		SccProjectUniqueName0 = noaa_ps\\noaa_ps.pssproj
+		SccProjectName0 = noaa_ps
+		SccLocalPath0 = noaa_ps
+		SccProjectUniqueName1 = noaa_lib\\noaa_lib.csproj
+		SccProjectName1 = noaa_lib
+		SccLocalPath1 = noaa_lib
+		SccProjectUniqueName2 = noaa_usql\\noaa_usql.usqlproj
+		SccProjectName2 = noaa_usql
+		SccLocalPath2 = noaa_usql
+		SccLocalPath3 = .
+		SccProjectUniqueName4 = noaa_db\\noaa_db.sqlproj
+		SccProjectName4 = noaa_db
+		SccLocalPath4 = noaa_db
+		SccProjectUniqueName5 = noaa_etl\\noaa_etl.dtproj
+		SccProjectName5 = noaa_etl
+		SccLocalPath5 = noaa_etl
+	EndGlobalSection
+EndGlobal

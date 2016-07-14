@@ -1,0 +1,41 @@
+﻿
+
+
+
+@data =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            200m
+        ),
+        (
+            250m
+        ),
+        (
+            220m
+        ),
+        (
+            230m
+        ),
+        (
+            240m
+        )
+          ) AS T(temp);
+
+
+/* try conversion using inline C# */
+
+@query =
+    SELECT *
+    FROM @data
+         CROSS APPLY
+             EXPLODE(new SQL.MAP<string, decimal?>{{"C", temp / 10m}, {"F", (temp / 10m) * (9m / 5m) + 32m}}) AS T(scale, s_temp);
+
+
+OUTPUT @query
+TO "/Output/inline_cs.csv"
+USING Outputters.Csv();
+
+
+    

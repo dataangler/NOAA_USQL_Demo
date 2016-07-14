@@ -1,0 +1,9 @@
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_db\bin\Debug\noaa_db.dacpac
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_db\bin\Debug\noaa_db.dll
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_db\bin\Debug\noaa_db.pdb
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_db\obj\Debug\noaa_db.dll
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_db\obj\Debug\noaa_db.pdb
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_db\obj\Debug\Model.xml
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_db\obj\Debug\refactor.xml
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_db\obj\Debug\postdeploy.sql
+C:\SRC\workspaces\Projects\USQLApplication_062016\noaa_db\obj\Debug\predeploy.sql

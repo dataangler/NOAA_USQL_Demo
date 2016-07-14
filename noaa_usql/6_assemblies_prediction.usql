@@ -1,0 +1,73 @@
+﻿/*
+1. CREATE ASSEMBLY
+2. REFERENCE ASSEMBLY
+3. Code-behind file
+4. MAP_AGG creates SqlMap
+5. Insert to existing table (update & merge not supported)
+6. Output table to file
+*/
+
+
+USE noaa;
+
+CREATE ASSEMBLY IF NOT EXISTS [Accord.Statistics] 
+FROM @"adl://adls316.azuredatalakestore.net/assemblies/Accord.Statistics.dll";
+
+CREATE ASSEMBLY IF NOT EXISTS [Accord] 
+FROM @"adl://adls316.azuredatalakestore.net/assemblies/Accord.dll";
+
+CREATE ASSEMBLY IF NOT EXISTS [Accord.Math] 
+FROM @"adl://adls316.azuredatalakestore.net/assemblies/Accord.Math.dll";
+
+
+REFERENCE ASSEMBLY noaa.[Accord];
+
+REFERENCE ASSEMBLY noaa.[Accord.Math];
+
+REFERENCE ASSEMBLY noaa.[Accord.Statistics];
+
+
+INSERT dbo.result (
+     [year]
+    ,[month]
+    ,[location]
+    ,[value_desc]
+    ,[value]
+)
+
+SELECT 2016 AS [year]
+        ,[month]
+        ,[location]
+        ,"AVG_TMAX_F_Predicted_2016" AS [value_desc]
+        ,Noaa.Predict.Regress(2016, MAP_AGG([year], [value])) AS [value]
+
+FROM dbo.result
+
+WHERE value_desc == "AVG_TMAX_F"
+    
+GROUP BY [month]
+    ,[location];
+
+
+/*
+Run the following in portal:
+
+USE noaa;
+
+OUTPUT dbo.result
+TO "/Output/noaa.dbo.result.csv"
+USING Outputters.Csv();
+
+
+Once a DML has occurred in a script on table T, no statement can later read data from T.
+Attempt to read from table noaa.dbo.result which has been modified earlier in the same script.
+*/
+
+
+
+
+
+
+
+
+

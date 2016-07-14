@@ -1,0 +1,23 @@
+﻿/*
+1. Demonstrate metadata object model, catalog
+2. Demonstrate file sets, persisted schema
+3. Point-out file is in compressed state
+*/
+
+
+CREATE DATABASE IF NOT EXISTS noaa;
+
+USE noaa;
+
+CREATE VIEW IF NOT EXISTS dbo.observation
+    AS
+EXTRACT station string,
+            datekey int,
+            element string,
+            value decimal?,
+            mflag string,
+            qflag string,
+            sflag string,
+            timekey int?
+    FROM "/noaa/{*}.csv.gz"
+    USING Extractors.Csv();

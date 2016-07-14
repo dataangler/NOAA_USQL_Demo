@@ -1,0 +1,5 @@
+﻿USE noaa;
+
+OUTPUT dbo.result
+TO "/Output/noaa.dbo.result.csv"
+USING Outputters.Csv();

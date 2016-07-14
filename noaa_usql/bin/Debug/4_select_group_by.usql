@@ -1,0 +1,80 @@
+ /*
+1. Demo create table with index & partitioning
+2. Demo INSERT to table
+3. Demo SELECT & JOINS
+4. Demo GROUP BY & AGGREGATION (AVG)
+
+
+x. TBD: Demo output to 
+
+6. TBD: Demo some ternary operator??
+7. TBD: Demo submit job from portal, specify priority & parallelism
+8. TBD: Write output to Azure SQL so we can view it in Power BI
+*/
+
+/*
+TO DO:
+
+0. Can I truncate or delete a table in U-SQL???
+1. Build TVF -- See C:\Users\jbrugger\Google Drive\Code-TSQL\scrach_tvf_cross_apply_temp_conversion.sql
+2. If ASQLDW will support ADL as a Polybase source for external table, then USE IT.
+2b. If not, then demo write output to blob storage & SQLDW with polybase over blob storage
+3. Finally, Power BI to view the results.
+
+
+*/
+
+
+USE noaa;
+
+
+DROP TABLE IF EXISTS dbo.result;
+
+/*
+CREATE TABLE dbo.result (
+    [year] int,
+    [month] int,
+    [location] string,  
+    [value_desc] string,    
+    [value] decimal?
+
+    ,INDEX ix_average_temp CLUSTERED ([year] ASC, [month] ASC)
+    PARTITIONED BY ROUND ROBIN
+);
+
+
+
+INSERT dbo.result (
+     [year]
+    ,[month]
+    ,[location]
+    ,[value_desc]
+    ,[value]
+)
+*/
+
+CREATE TABLE dbo.result (
+    INDEX ix_average_temp CLUSTERED ([year] ASC, [month] ASC)
+    PARTITIONED BY ROUND ROBIN
+)
+AS                   
+SELECT 
+     c.[year]
+    ,c.[month]
+    ,s.[iata_code] AS [location]   
+    ,String.Concat("AVG_", o.[element]) AS [value_desc]      
+    ,AVG(o.[value]) AS [value]
+       
+FROM dbo.observation AS o
+JOIN dbo.calendar AS c ON c.datekey == o.datekey
+JOIN dbo.station_iata AS s ON s.id == o.station
+    
+WHERE o.[element] IN ("TMAX","TMIN")
+AND s.[iata_code] == "ORL"
+    
+GROUP BY 
+     c.[year]
+    ,c.[month]
+    ,s.[iata_code]    
+    ,o.[element];                      
+                    

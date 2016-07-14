@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vertexCommand command="Start" jobType="None" managedMemorySize="0" vertexArg="ScopeEngine.dll -scopeVertex SV1_Extract -vertexNumber 0">
+  <inputs>
+    <input name="" path="C:\SRC\repo\NOAAWeather\sample.csv" blockAligned="True" globalStartOffset="0" localStartOffset="0" localEndOffset="358926" length="358926" />
+  </inputs>
+  <outputs>
+    <output path="C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\_Temp\1_basic_select_11FCCB52303943F8\scopetmpfile._SV1_Extract_out0" />
+  </outputs>
+</vertexCommand>

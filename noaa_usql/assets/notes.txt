@@ -1,0 +1,54 @@
+/*
+
+Aggregate or ranking functions cannot be nested.
+
+The table alias must include both table and columns of the form Table(Columns). The columns are then accessible as Table.Column or just Column.
+
+Items in a SELECT list need distinct aliases. [datekey] is the alias for multiple SELECT items.
+
+
+Inner exception from user expression: Could not load file or assembly 'Accord.Statistics, Version=3.0.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7' or one of its dependencies. The system cannot find the file specified.
+*/
+
+
+This works, but not in a cross apply...
+
+CREATE FUNCTION dbo.fn_convert_temp(@input_value decimal)
+RETURNS @result
+AS
+BEGIN
+        @result =
+        SELECT *
+        FROM( VALUES
+                 ("C", @temp / 10m) /* Celsius */
+                ,("F", (@temp / 10m) * (9m / 5m) + 32m) /* Fahrenheit */
+                ,("K", @temp / 10m + 273.15m) /* Kelvin */
+            ) AS T([scale], [value]);
+RETURN;
+END;
+
+public class TempConvertApplier : IApplier
+{
+    public override IEnumerable<IRow> Apply(IRow input, IUpdatableRow output)
+    {
+        //SqlMap<string, decimal?> converted = new SqlMap<string, decimal?>()
+
+        //converted.
+
+        //{
+        //     {"C", d.temp / 10m}
+        //    ,{"F", (d.temp / 10m) * (9m / 5m) + 32m}
+        //};
+
+
+
+        //SqlMap.Create(SqlMap<string, decimal?>)
+
+        output.Set(new SqlMap<string, decimal?> { { "C", 10 } };
+
+
+
+        Dictionary<string, decimal?> fred = new Dictionary<string, decimal?> { { "C", 10 }, { "F", 20 } };
+            
+    }
+}

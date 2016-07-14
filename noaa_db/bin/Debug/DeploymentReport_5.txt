@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[station]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[station] (Table)
+
+** Supporting actions
+     Create
+       [dbo].[station].[IX_geo] (Spatial Index)
+
+The object [tpa] exists in the target, but it will not be dropped even though you selected the 'Generate drop statements for objects that are in the target database but that are not in the source' check box.
+The object [tpa_log] exists in the target, but it will not be dropped even though you selected the 'Generate drop statements for objects that are in the target database but that are not in the source' check box.
+

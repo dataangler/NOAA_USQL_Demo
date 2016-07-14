@@ -1,0 +1,51 @@
+﻿USE noaa;
+
+DROP FUNCTION IF EXISTS dbo.fn_convert;
+
+CREATE FUNCTION dbo.fn_convert(@temp decimal) /*temp in tenths of a degree Celsius */
+RETURNS @result
+AS
+BEGIN
+        @result =
+        SELECT *
+        FROM( VALUES
+                 ("C", @temp / 10m) /* Celsius */
+                ,("F", (@temp / 10m) * (9m / 5m) + 32m) /* Fahrenheit */
+                ,("K", @temp / 10m + 273.15m) /* Kelvin */
+            ) AS T([scale], [value]);
+RETURN;
+END;
+
+@data =
+    SELECT *
+    FROM( VALUES
+        (200), (220), (230)
+    ) AS T(temp);
+
+@query1 =
+    SELECT *
+    FROM dbo.fn_convert(200) AS f;
+
+OUTPUT @query1
+TO "/Output/test1_fn_convert.csv"
+USING Outputters.Csv();
+
+//doesn't work
+//@query2 =
+//    SELECT t.*
+//    FROM @data AS d
+//    CROSS APPLY dbo.fn_convert(d.temp) AS t(scale, temp);
+//
+//OUTPUT @query2
+//TO "/Output/test2_fn_convert.csv"
+//USING Outputters.Csv();
+
+
+@query3 =
+    SELECT t.*
+    FROM @data AS d
+    CROSS APPLY EXPLODE(new SQL.MAP<string, decimal?>{{"C", d.temp / 10m}, {"F", (d.temp / 10m) * (9m / 5m) + 32m}}) AS t(scale, temp);
+
+OUTPUT @query3
+TO "/Output/test3_fn_convert.csv"
+USING Outputters.Csv();

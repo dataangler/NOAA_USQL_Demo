@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c10e29b9-cc86-4232-891a-bb6d32aa8b43</ProjectGuid>
+    <OutputType>File</OutputType>
+    <AssemblyName>Algebra.xml</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Name>noaa_usql</Name>
+    <RootNamespace>USQLApplication_062016</RootNamespace>
+    <RuntimeVersion>default</RuntimeVersion>
+    <OutputStreamPath>C:\Users\jbrugger\AppData\Local\USQLDataRoot</OutputStreamPath>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Script Include="A_output.usql" />
+    <Script Include="2_adla_catalog.usql" />
+    <Script Include="5_federated.usql" />
+    <Script Include="3_external_data.usql" />
+    <Script Include="4_select_group_by.usql" />
+    <Script Include="6_assemblies_prediction.usql" />
+    <Script Include="1_basic_select.usql" />
+    <Script Include="7_misc.usql" />
+    <Script Include="8_misc2.usql" />
+    <Script Include="9_misc3.usql" />
+    <ScriptCode Include="A_output.usql.cs">
+      <DependentUpon>A_output.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="2_adla_catalog.usql.cs">
+      <DependentUpon>2_adla_catalog.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="5_federated.usql.cs">
+      <DependentUpon>5_federated.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="3_external_data.usql.cs">
+      <DependentUpon>3_external_data.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="4_select_group_by.usql.cs">
+      <DependentUpon>4_select_group_by.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="6_assemblies_prediction.usql.cs">
+      <DependentUpon>6_assemblies_prediction.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="1_basic_select.usql.cs">
+      <DependentUpon>1_basic_select.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="7_misc.usql.cs">
+      <DependentUpon>7_misc.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="8_misc2.usql.cs">
+      <DependentUpon>8_misc2.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="9_misc3.usql.cs">
+      <DependentUpon>9_misc3.usql</DependentUpon>
+    </ScriptCode>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Accord">
+      <Name>Accord</Name>
+      <AssemblyName>Accord.dll</AssemblyName>
+      <HintPath>..\..\linear_regression\linear_regression\bin\Debug\Accord.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Accord.Math">
+      <Name>Accord.Math</Name>
+      <AssemblyName>Accord.Math.dll</AssemblyName>
+      <HintPath>..\..\linear_regression\linear_regression\bin\Debug\Accord.Math.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Accord.Statistics">
+      <Name>Accord.Statistics</Name>
+      <AssemblyName>Accord.Statistics.dll</AssemblyName>
+      <HintPath>..\..\linear_regression\linear_regression\bin\Debug\Accord.Statistics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\notes.txt">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(AppData)\Microsoft\DataLake\MsBuild\1.0\Usql.targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

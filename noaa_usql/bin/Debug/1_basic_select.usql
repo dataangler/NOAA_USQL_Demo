@@ -1,0 +1,36 @@
+/*
+1. Demo schematize external data using C# types
+2. Demo uppercase case-sensitive syntax
+3. Demo extractor, outputter operators over structured data
+4. Mention skipFirstNRows:1 -- verify whether enabled, was disabled as of 12/2015, 4/2016, and 6/22/2016
+*/
+
+
+@sample =
+    EXTRACT station string,
+            datekey int,
+            element string,
+            value decimal?,
+            mflag string,
+            qflag string,
+            sflag string,
+            timekey int?
+    /* FROM "/sample.csv" */
+    FROM @"C:\SRC\repo\NOAAWeather\sample.csv"
+    USING Extractors.Csv();
+
+
+@query =
+    SELECT SUM(value) AS total_value,
+           element
+    FROM @sample
+    GROUP BY element;
+
+
+OUTPUT @query
+/* TO "/Output/sample_out.tsv" */
+TO @"C:\SRC\repo\NOAAWeather\sample_out.tsv"
+USING Outputters.Tsv();
+
+
+          

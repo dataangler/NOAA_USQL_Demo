@@ -1,0 +1,35 @@
+*** Entering compilation, time elapsed until this point: 00:00:01.9850359
+*** Done with C# compilation, time elapsed until this point: 00:00:02.1107101
+#CPP cl.exe pre-compile (iteration 0/0) -- Native
+#CPP stdout:
+__ScopeCodeGenEngine__.dll.cpp
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.9000.0\CppSdk\VC\bin\c1xx.dll)=2.08684s < 2686147644893 - 2686152727977 > BB [C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.dll.cpp]
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.9000.0\CppSdk\VC\bin\c2.dll)=0.13726s < 2686152730525 - 2686153064859 > BB [C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.dll.cpp]
+
+#CPP stderr:
+
+#CPP cl.exe compile (iteration 1/1) -- Native
+#CPP stdout:
+__ScopeCodeGenEngine__.dll.cpp
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.9000.0\CppSdk\VC\bin\c1xx.dll)=0.41056s < 2686153151515 - 2686154151541 > BB [C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.dll.cpp]
+time(C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Microsoft Azure Data Lake Tools for Visual Studio 2015\2.0.9000.0\CppSdk\VC\bin\c2.dll)=1.76665s < 2686154153577 - 2686158456730 > BB [C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.dll.cpp]
+
+#CPP stderr:
+
+*** Done with C++ compilation, time elapsed until this point: 00:00:06.7828859
+#LINK stdout:
+__ScopeCodeGenEngine__.dllNative_pch.obj : warning LNK4042: object specified more than once; extras ignored
+   Creating library C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.lib and object C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.exp
+Linker: LibDef Total time = 0.00258s PB: 30060544 [C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.dll] 
+Linker:   OptRef Total time = 0.00059s PB: 29642752 [C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.dll] 
+Linker:   OptIcf Total time = 0.00966s PB: 32825344 [C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.dll] 
+Linker: Pass 1: Interval #1, time = 0.11650s [C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.dll] 
+Linker:   Wait PDB close Total time = 0.03378s PB: 9142272 [C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.dll] 
+Linker:   Wait type merge Total time = 0.02200s PB: 9084928 [C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.dll] 
+Linker: Pass 2: Interval #2, time = 0.09554s [C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.dll] 
+Linker: Final Total time = 0.21209s < 2686158545244 - 2686159061846 > PB: 9908224 [C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\C981B644B8E9DA3\1_basic_select_11FCCB52303943F8\__ScopeCodeGenEngine__.dll] 
+
+#LINK stderr:
+
+*** Done with C++ linking, time elapsed until this point: 00:00:07.0323675
+*** Exiting compilation, time elapsed until this point: 00:00:07.0327435

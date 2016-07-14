@@ -1,0 +1,56 @@
+﻿/*
+1. Demonstrate security identity in PS
+2. Demonstrate credential
+3. Demonstrate data source
+4. Demonstrate external tables
+*/
+
+USE noaa;
+
+
+CREATE CREDENTIAL IF NOT EXISTS extcred
+WITH USER_NAME = "usqllogin",
+     IDENTITY = "usqllogin";
+
+
+CREATE DATA SOURCE IF NOT EXISTS azsqldbsrc
+FROM AZURESQLDB
+WITH
+(
+    CREDENTIAL = extcred,
+    PROVIDER_STRING = "Initial Catalog=noaadb;"
+);
+
+
+CREATE EXTERNAL TABLE IF NOT EXISTS dbo.station_iata
+(
+    [id] string,
+    [latitude] double?,
+    [longitude] double?,
+    [elevation] double?,
+    [state] string,
+    [name] string,
+    [gsn_flag] string,
+    [hcn_crn_flag] string,
+    [wmo_id] string,
+    [iata_code] string,
+    [iata_city] string
+)
+FROM azsqldbsrc LOCATION "dbo.station_iata";          
+
+
+CREATE EXTERNAL TABLE IF NOT EXISTS dbo.calendar
+(
+    [datekey] int,
+    [date] DateTime,
+    [year] int,
+    [month] int,
+    [day] int,
+    [day_of_year] int,
+    [day_of_week] int,
+    [quarter] int,
+    [week] int,
+    [month_name] string,
+    [weekday] string
+)
+FROM azsqldbsrc LOCATION "dbo.calendar";

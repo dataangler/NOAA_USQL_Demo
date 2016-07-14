@@ -1,0 +1,45 @@
+﻿
+//USE noaa;
+
+//standalone create table
+/*
+CREATE TABLE dbo.result (
+    [year] int,
+    [month] int,
+    [location] string,  
+    [value_desc] string,    
+    [value] decimal?
+
+    ,INDEX ix_average_temp CLUSTERED ([year] ASC, [month] ASC)
+    PARTITIONED BY ROUND ROBIN
+);
+*/
+
+//Yes, you can truncate a table
+//TRUNCATE TABLE dbo.result;
+
+
+//@sample =
+//    EXTRACT station string,
+//            datekey int,
+//            element string,
+//            value decimal?,
+//            mflag string,
+//            qflag string,
+//            sflag string,
+//            timekey int?
+//    FROM "/sample.csv"
+//    USING Extractors.Csv();
+//
+//@query =
+//    SELECT s.*
+//    FROM @sample AS s
+//    JOIN dbo.station_iata AS st
+//    ON s.station == st.id AND st.state == "FL"
+//    WHERE s.element IN("TMAX", "TMIN");
+//
+//OUTPUT @query
+//TO "/Output/test_composite.csv"
+//USING Outputters.Csv();
+//    
+

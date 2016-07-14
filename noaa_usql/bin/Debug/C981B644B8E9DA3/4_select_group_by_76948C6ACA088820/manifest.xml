@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<RuntimeManifest
+  xmlns="http://www.bing.com/Cosmos/Runtime/2010/07"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.bing.com/Cosmos/Runtime/2010/07 RuntimeManifest.xsd"
+  schemaVersion="5.0">
+  
+  <Compiler executable="localrunhelper.exe" commandLine="">
+    <Resource relativePath="localrunhelper.exe"/>
+    <Resource relativePath="localvertexhost.exe"/>
+    <Resource relativePath="localstorelibrary.dll"/>
+    <Resource relativePath="metadataexecutor.exe"/>
+    <Resource relativePath="microsoft.analytics.localsecretstore.dll"/>
+    <Resource relativePath="microsoft.analytics.localrun.dll"/>
+    <Resource relativePath="microsoft.scope.dependencies.kona.local.dll"/>
+    <Resource relativePath="scopeenginecpp"/>
+    <Resource relativePath="manifest.xml"/>
+
+    <Resource relativePath="cosmos.ini"/>
+    <Resource relativePath="cqo.dll"/>
+    <Resource relativePath="fusioncodegen.dll"/>
+    <Resource relativePath="microsoft.analytics.common.dll"/>
+    <Resource relativePath="microsoft.analytics.interfaces.dll"/>
+    <Resource relativePath="microsoft.analytics.types.dll"/>
+    <Resource relativePath="microsoft.cosmos.dll"/>
+    <Resource relativePath="microsoft.cosmos.async.dll"/>
+    <Resource relativePath="microsoft.cosmos.common.dll"/>
+    <Resource relativePath="microsoft.scope.dependencies.dll"/>
+    <Resource relativePath="microsoft.scope.interfaces.dll"/>
+    <Resource relativePath="scope.metadataservice.client.dll"/>
+    <Resource relativePath="scope.metadataservice.client.dll.config"/>
+    <Resource relativePath="scope.metadataservice.contract.dll"/>
+    <Resource relativePath="scopecompiler.dll"/>
+    <Resource relativePath="scopeengine.dll"/>
+    <Resource relativePath="scopeengine.pdb"/>
+    <Resource relativePath="scopeengine.lib"/>
+    <Resource relativePath="scopeenginemanaged.dll"/>
+    <Resource relativePath="scopeenginemanaged.lib"/>
+    <Resource relativePath="scopemetadatacontract.dll"/>
+    <Resource relativePath="scoperuntime.exe"/>
+    <Resource relativePath="scoperuntimelib.dll"/>
+    <Resource relativePath="scoperuntimelib.lib"/>
+    <Resource relativePath="roslyn.compilers.dll"/>
+    <Resource relativePath="roslyn.compilers.csharp.dll"/>
+    <Resource relativePath="vcruntime140.dll"/>
+  </Compiler>
+
+  <Vertex executable="localvertexhost.exe" commandLine="">
+  </Vertex>
+</RuntimeManifest>

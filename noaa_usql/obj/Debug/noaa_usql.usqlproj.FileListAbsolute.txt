@@ -1,0 +1,9 @@
+C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\obj\Debug\noaa_usql.usqlprojResolveAssemblyReference.cache
+C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\obj\Debug\Algebra.xml
+C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\Algebra.xml
+C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\Accord.dll
+C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\Accord.Math.dll
+C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\Accord.Statistics.dll
+C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\Accord.xml
+C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\Accord.Math.xml
+C:\SRC\workspaces\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\Accord.Statistics.xml

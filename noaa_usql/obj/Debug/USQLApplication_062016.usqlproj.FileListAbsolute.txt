@@ -1,0 +1,2 @@
+C:\Users\jbrugger\Documents\Visual Studio 2015\Projects\USQLApplication_062016\USQLApplication_062016\bin\Debug\Algebra.xml
+C:\Users\jbrugger\Documents\Visual Studio 2015\Projects\USQLApplication_062016\USQLApplication_062016\obj\Debug\Algebra.xml
